@@ -82,12 +82,6 @@ const config = {
          position: 'left',
           label: 'Tutorial',
        },
-
-        {
-          to: '/test/server',                     
-          label: 'Test',
-          position: 'left',
-        },
      ],
     },
   }),
