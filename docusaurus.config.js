@@ -48,10 +48,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -74,17 +70,7 @@ const config = {
       }),
     ],
   ],
-  plugins: [
-    [
-     '@docusaurus/plugin-content-docs',
-     {
-        id: 'test',
-       path: 'test',
-       routeBasePath: 'test',
-       sidebarPath: path.resolve('./sidebarsTest.js'),
-      },
-    ],
-  ],
+
   themeConfig: ({
    navbar: {
      title: 'Fredo doc',
