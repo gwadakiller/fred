@@ -2,18 +2,19 @@ backend:
   name: git-gateway
   branch: main
 
+site_url: https://stirring-gumption-20f3cf.netlify.app
+
 media_folder: static/img
 public_folder: /img
 
 collections:
   - name: "docs"
-    label: "Documentation"
+    label: "Docs"
     folder: "docs"
     create: true
     slug: "{{slug}}"
-
     fields:
-      - { label: "Titre", name: "title", widget: "string" }
-      - { label: "Contenu", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
 site_url: https://stirring-gumption-20f3cf.netlify.app
