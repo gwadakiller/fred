@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: gwadakiller/mon-site
+  name: git-gateway
   branch: main
 
 media_folder: static/img
