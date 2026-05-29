@@ -15,3 +15,5 @@ collections:
     fields:
       - { label: "Titre", name: "title", widget: "string" }
       - { label: "Contenu", name: "body", widget: "markdown" }
+
+site_url: https://stirring-gumption-20f3cf.netlify.app
