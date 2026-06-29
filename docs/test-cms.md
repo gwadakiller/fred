@@ -1,5 +1,8 @@
 ---
-title: test cms
+id: test-cms
+title: Test CMS
+sidebar_label: Test CMS
+sidebar_position: 10
 description: Première page créée avec le CMS
 ---
 
