@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-site_url: https://stirring-gumption-20f3cf.netlify.app
+site_url: https://sensational-kheer-a03caf.netlify.app/
 
 media_folder: static/img
 public_folder: /img
