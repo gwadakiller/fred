@@ -14,16 +14,15 @@ media_library:
     publicKey: "demopublickey"  # On utilisera un upload simple pour l'instant
 
 collections:
-  - name: "docs"
-    label: "Docs"
+    - name: "docs"
+    label: "Documentation"
     folder: "docs"
     create: true
     slug: "{{slug}}"
-        fields:
-      - { label: "ID de la page", name: "id", widget: "string", required: false }
+    fields:
       - { label: "Titre de la page", name: "title", widget: "string" }
       - { label: "Nom dans le menu", name: "sidebar_label", widget: "string" }
       - { label: "Position dans le menu", name: "sidebar_position", widget: "number", default: 10 }
       - { label: "Description (optionnel)", name: "description", widget: "string", required: false }
+      - { label: "Document joint (optionnel)", name: "document", widget: "file", required: false, media_library: { config: { multiple: false } } }
       - { label: "Corps du document", name: "body", widget: "markdown" }
-
