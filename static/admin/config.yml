@@ -2,19 +2,11 @@ backend:
   name: git-gateway
   branch: main
 
-site_url: https://fred-sandy-phi.vercel.app/
-
 media_folder: "static/img"
 public_folder: "/img"
 
-# Configuration pour les documents
-media_library:
-  name: uploadcare
-  config:
-    publicKey: "demopublickey"  # On utilisera un upload simple pour l'instant
-
 collections:
-    - name: "docs"
+  - name: "docs"
     label: "Documentation"
     folder: "docs"
     create: true
@@ -24,5 +16,4 @@ collections:
       - { label: "Nom dans le menu", name: "sidebar_label", widget: "string" }
       - { label: "Position dans le menu", name: "sidebar_position", widget: "number", default: 10 }
       - { label: "Description (optionnel)", name: "description", widget: "string", required: false }
-      - { label: "Document joint (optionnel)", name: "document", widget: "file", required: false, media_library: { config: { multiple: false } } }
       - { label: "Corps du document", name: "body", widget: "markdown" }
