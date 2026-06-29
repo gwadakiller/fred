@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-site_url: https://sensational-kheer-a03caf.netlify.app/
+site_url: https://fred-sandy-phi.vercel.app/
 
 media_folder: static/img
 public_folder: /img
