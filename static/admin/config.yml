@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-site_url: https://stirring-gumption-20f3cf.netlify.app
+site_url: https://fred-sandy-phi.vercel.app/
 
 media_folder: static/img
 public_folder: /img
@@ -13,8 +13,11 @@ collections:
     folder: "docs"
     create: true
     slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+        fields:
+      - { label: "ID de la page", name: "id", widget: "string", required: false }
+      - { label: "Titre de la page", name: "title", widget: "string" }
+      - { label: "Nom dans le menu", name: "sidebar_label", widget: "string" }
+      - { label: "Position dans le menu", name: "sidebar_position", widget: "number", default: 10 }
+      - { label: "Description (optionnel)", name: "description", widget: "string", required: false }
+      - { label: "Corps du document", name: "body", widget: "markdown" }
 
-site_url: https://stirring-gumption-20f3cf.netlify.app
