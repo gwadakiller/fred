@@ -4,8 +4,14 @@ backend:
 
 site_url: https://fred-sandy-phi.vercel.app/
 
-media_folder: static/img
-public_folder: /img
+media_folder: "static/img"
+public_folder: "/img"
+
+# Configuration pour les documents
+media_library:
+  name: uploadcare
+  config:
+    publicKey: "demopublickey"  # On utilisera un upload simple pour l'instant
 
 collections:
   - name: "docs"
